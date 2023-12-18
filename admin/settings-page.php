@@ -21,10 +21,10 @@ function punch_card_plugin_display_settings_page() {
 			<?php
 			
 			// output security fields
-			settings_fields( 'punch_card_plugin_options' );
+			settings_fields( 'punch_card_plugin_option_group' );
 			
 			// output setting sections
-			do_settings_sections( 'options_punch_card_page' );
+			do_settings_sections( 'punch_card_options_page' );
 			
 			// submit button
 			submit_button();

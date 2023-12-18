@@ -37,14 +37,14 @@ if (is_admin()) {
 	require_once plugin_dir_path(__FILE__) . 'admin/settings-callbacks.php';
 
 	// default plugin options
-	function punch_card_options_default()
+	function punch_card_plugin_settings_default()
 	{
 
 		return array(
 			'company_name' => 'You Stick Out',
 			'sub_title' => 'Digital Agency',
 			'company_website' => 'https://youstickout.com',
-			'punch_card_message' => 'Come in for free coffee!'
+			'punch_card_message' => '<h2>Come in for free coffee!</h2>'
 		);
 
 	}
