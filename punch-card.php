@@ -28,13 +28,16 @@ if (!defined('ABSPATH')) {
 
 }
 
+define( 'PUNCHCARDDOMAIN', 'punch-card-post-types' );
+define( 'PUNCHCARDPATH', plugin_dir_path( __FILE__ ) );
+
 if (is_admin()) {
 
 	// include plugin dependencies
-	require_once plugin_dir_path(__FILE__) . 'admin/admin-menu.php';
-	require_once plugin_dir_path(__FILE__) . 'admin/settings-page.php';
-	require_once plugin_dir_path(__FILE__) . 'admin/settings-register.php';
-	require_once plugin_dir_path(__FILE__) . 'admin/settings-callbacks.php';
+	require_once PUNCHCARDPATH . 'admin/admin-menu.php';
+	require_once PUNCHCARDPATH . 'admin/settings-page.php';
+	require_once PUNCHCARDPATH . 'admin/settings-register.php';
+	require_once PUNCHCARDPATH . 'admin/settings-callbacks.php';
 
 	// default plugin options
 	function punch_card_plugin_settings_default()
@@ -49,3 +52,12 @@ if (is_admin()) {
 
 	}
 }
+
+
+// Punch Card Post Type
+require_once PUNCHCARDPATH . 'post-types/register.php';
+add_action( 'init', 'punch_card_card_type' );
+
+// Punch Card Taxonomy
+require_once( PUNCHCARDPATH . '/taxonomies/register.php' );
+add_action( 'init', 'pcard_register_pgame_type_taxonomy' );
