@@ -42,8 +42,8 @@ function punch_card_register_meta_boxes($meta_boxes)
         'fields' => [
             [
                 'type' => 'number',
-                'name' => esc_html__('Number Of Games', PUNCHCARDDOMAIN),
-                'id' => $prefix . 'number_of_games',
+                'name' => esc_html__('Milestone To Reward', PUNCHCARDDOMAIN),
+                'id' => $prefix . 'milestone_to_reward',
                 'desc' => esc_html__('The number of games a client should reach to get rewards', PUNCHCARDDOMAIN),
                 'placeholder' => esc_html__('Games Threshold', PUNCHCARDDOMAIN),
             ],

@@ -38,6 +38,7 @@ if (is_admin()) {
 	require_once PUNCHCARDPATH . 'admin/settings-page.php';
 	require_once PUNCHCARDPATH . 'admin/settings-register.php';
 	require_once PUNCHCARDPATH . 'admin/settings-callbacks.php';
+	require_once PUNCHCARDPATH . 'admin/user/custom-field.php';
 
 	// default plugin options
 	function punch_card_plugin_settings_default()
