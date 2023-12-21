@@ -20,3 +20,25 @@ function punch_card_user_settings_errors($errors, $update, $user)
 		$errors->add('my-plugin-invalid-admin-level', '<strong>ERROR:</strong> Games Played cannot exceed the Milestone To Reward for the selected punch card.');
 	}
 }
+
+
+
+function validate_and_save_phone($errors, $update, $user) {
+    if (isset($_POST['phone'])) {
+        $phone = sanitize_text_field($_POST['phone']);
+
+        // Your custom phone number validation logic
+        if (!is_numeric($phone) || strlen($phone) !== 10) {
+            // Phone number doesn't match the required criteria
+            $errors->add('invalid_phone', __('Invalid phone number. Please enter a 10-digit numeric value.', 'your_text_domain'));
+        } else {
+            // Valid phone number, save it
+            update_user_meta($user->ID, 'phone', $phone);
+        }
+    }
+
+    return $errors;
+}
+
+add_filter('user_profile_update_errors', 'validate_and_save_phone', 10, 3);
+

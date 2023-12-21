@@ -91,7 +91,7 @@ function show_rewarded_punch_cards($user)
 		<table class="form-table">
 			<tr>
 				<th>
-					<?php _e('Title', PUNCHCARDDOMAIN); ?>
+					<?php _e('Pool Game Type', PUNCHCARDDOMAIN); ?>
 				</th>
 				<th>
 					<?php _e('Milestone To Reward', PUNCHCARDDOMAIN); ?>
@@ -100,10 +100,16 @@ function show_rewarded_punch_cards($user)
 					<?php _e('Reward', PUNCHCARDDOMAIN); ?>
 				</th>
 			</tr>
-			<?php foreach ($rewarded_punch_cards as $punch_card_id): ?>
+			<?php foreach ($rewarded_punch_cards as $punch_card_id):
+				$terms = get_the_terms($punch_card_id, 'pool-game-type');
+				$name = '';
+				if (!is_a($terms, 'WP_Error') && $terms !== false) {
+					$name = $terms[0]->name;
+				}
+				?>
 				<tr>
 					<td>
-						<?php echo esc_html($punch_card_id); ?>
+						<?php echo esc_html($name); ?>
 					</td>
 					<td>
 						<?php echo esc_html(get_post_meta($punch_card_id, 'milestone_to_reward', true)); ?>
@@ -127,4 +133,27 @@ add_action('edit_user_profile', 'show_rewarded_punch_cards');
 
 require_once PUNCHCARDPATH . 'admin/user/profile-error-validation.php';
 require_once PUNCHCARDPATH . 'admin/user/update-profile.php';
+
+
+
+// Add phone number after contact section
+function custom_get_user_contact_methods($methods, $user)
+{
+	// Add phone contact method
+	$methods['phone'] = __('Phone Number');
+
+	return $methods;
+}
+
+add_filter('user_contactmethods', 'custom_get_user_contact_methods', 10, 2);
+
+// Hide admin color scheme
+function custom_admin_color_scheme_picker($user_id)
+{
+	global $_wp_admin_css_colors;
+	$_wp_admin_css_colors = 0;
+}
+
+add_action('user_edit_form_tag', 'custom_admin_color_scheme_picker', 10, 1);
+
 
