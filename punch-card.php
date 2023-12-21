@@ -28,8 +28,12 @@ if (!defined('ABSPATH')) {
 
 }
 
-define( 'PUNCHCARDDOMAIN', 'punch-card-post-types' );
-define( 'PUNCHCARDPATH', plugin_dir_path( __FILE__ ) );
+define('PUNCHCARDDOMAIN', 'punch-card-post-types');
+define('PUNCHCARDPATH', plugin_dir_path(__FILE__));
+
+
+require_once PUNCHCARDPATH . 'includes/helper_validation.php';
+require_once PUNCHCARDPATH . 'admin/user/customize-user-profile.php';
 
 if (is_admin()) {
 
@@ -39,6 +43,8 @@ if (is_admin()) {
 	require_once PUNCHCARDPATH . 'admin/settings-register.php';
 	require_once PUNCHCARDPATH . 'admin/settings-callbacks.php';
 	require_once PUNCHCARDPATH . 'admin/user/custom-field.php';
+	require_once PUNCHCARDPATH . 'admin/user/profile-error-validation.php';
+	require_once PUNCHCARDPATH . 'admin/user/update-profile.php';
 
 	// default plugin options
 	function punch_card_plugin_settings_default()
@@ -57,8 +63,11 @@ if (is_admin()) {
 
 // Punch Card Post Type
 require_once PUNCHCARDPATH . 'post-types/register.php';
-add_action( 'init', 'punch_card_card_type' );
+add_action('init', 'punch_card_card_type');
 
 // Punch Card Taxonomy
-require_once( PUNCHCARDPATH . '/taxonomies/register.php' );
-add_action( 'init', 'pcard_register_pgame_type_taxonomy' );
+require_once(PUNCHCARDPATH . '/taxonomies/register.php');
+add_action('init', 'pcard_register_pgame_type_taxonomy');
+
+
+require_once PUNCHCARDPATH . 'admin/user/registration/registration-form.php';
