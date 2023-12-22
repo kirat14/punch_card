@@ -48,14 +48,14 @@ function punch_card_registration_errors($errors, $sanitized_user_login, $user_em
     if ('' === $_POST['phone']) {
         $errors->add('empty_phone', sprintf('<strong>%s</strong>: %s', __('ERROR', PUNCHCARDDOMAIN), __('You must include a phone number.', PUNCHCARDDOMAIN)));
     } elseif (!is_phone_number($_POST['phone'])) {
-        $errors->add('invalid_phone_number', __('<strong>Error:</strong> The phone number is not correct.'));
+        $errors->add('invalid_phone_number', __('<strong>Error:</strong> The phone number is not correct.', PUNCHCARDDOMAIN));
         $_POST['phone'] = '';
     } elseif (phone_exists($_POST['phone'])) {
         $errors->add(
             'phone_exists',
             sprintf(
                 /* translators: %s: Link to the login page. */
-                __('<strong>Error:</strong> This phone is already registered.'),
+                __('<strong>Error:</strong> This phone is already registered.', PUNCHCARDDOMAIN),
                 wp_login_url()
             )
         );

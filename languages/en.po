@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Punch Card Plugin\n"
+"POT-Creation-Date: 2023-12-21 21:08-0600\n"
+"PO-Revision-Date: 2023-12-21 21:08-0600\n"
+"Last-Translator: \n"
+"Language-Team: YSO Team\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: public\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+
+#: admin/user/custom-field.php:13
+msgid "Assing User Loyalty Card"
+msgstr ""
+
+#: admin/user/custom-field.php:20 admin/user/custom-field.php:34
+msgid "Select a Loyalty Card"
+msgstr ""
+
+#: admin/user/custom-field.php:48 admin/user/custom-field.php:105
+#: admin/user/customize-user-profile.php:60 post-types/register.php:45
+msgid "Milestone To Reward"
+msgstr ""
+
+#: admin/user/custom-field.php:61 admin/user/custom-field.php:118
+msgid "Games Played"
+msgstr ""
+
+#: admin/user/custom-field.php:85 post-types/register.php:37
+msgid "Loyalty Card"
+msgstr ""
+
+#: admin/user/custom-field.php:92
+msgid "Current Loyalty Card"
+msgstr ""
+
+#: admin/user/custom-field.php:153
+#: admin/user/registration/registration-form.php:35
+msgid "Phone Number"
+msgstr ""
+
+#: admin/user/customize-user-profile.php:49
+msgid "Rewarded Punch Cards"
+msgstr ""
+
+#: admin/user/customize-user-profile.php:57 taxonomies/register.php:6
+msgid "Pool Game Type"
+msgstr ""
+
+#: admin/user/customize-user-profile.php:63 post-types/register.php:52
+msgid "Reward"
+msgstr ""
+
+#: admin/user/customize-user-profile.php:94
+msgid "No Punch Cards Assigned"
+msgstr ""
+
+#: admin/user/profile-error-validation.php:33
+msgid "Invalid phone number. Please enter a 10-digit numeric value."
+msgstr ""
+
+#: admin/user/registration/registration-form.php:21
+msgid "First Name"
+msgstr ""
+
+#: admin/user/registration/registration-form.php:28
+msgid "Last Name"
+msgstr ""
+
+#: admin/user/registration/registration-form.php:49
+#: admin/user/registration/registration-form.php:65
+#: admin/user/registration/registration-form.php:70
+msgid "ERROR"
+msgstr ""
+
+#: admin/user/registration/registration-form.php:49
+msgid "You must include a phone number."
+msgstr ""
+
+#: admin/user/registration/registration-form.php:51
+msgid "<strong>Error:</strong> The phone number is not correct."
+msgstr ""
+
+#: admin/user/registration/registration-form.php:58
+msgid "<strong>Error:</strong> This phone is already registered."
+msgstr ""
+
+#: admin/user/registration/registration-form.php:65
+msgid "You must include a first name."
+msgstr ""
+
+#: admin/user/registration/registration-form.php:70
+msgid "You must include a last name."
+msgstr ""
+
+#: post-types/arrange.php:14
+msgid "Number of Games"
+msgstr ""
+
+#: post-types/register.php:12
+msgid "Punch Cards"
+msgstr ""
+
+#: post-types/register.php:13
+msgid "Punch Card"
+msgstr ""
+
+#: post-types/register.php:14 post-types/register.php:15
+msgid "Add New Punch Card"
+msgstr ""
+
+#: post-types/register.php:47
+msgid "The number of games a client should reach to get rewards"
+msgstr ""
+
+#: post-types/register.php:48
+msgid "Games Threshold"
+msgstr ""
+
+#: post-types/register.php:54
+msgid "The reward provided upon reaching the threshold."
+msgstr ""
+
+#: post-types/register.php:55
+#, no-php-format
+msgid "50% off all drinks"
+msgstr ""
+
+#: taxonomies/register.php:5
+msgid "Pool Game Types"
+msgstr ""
+
+#: taxonomies/register.php:7
+msgid "Edit Pool Game Type"
+msgstr ""
+
+#: taxonomies/register.php:8
+msgid "Update Pool Game Type"
+msgstr ""
+
+#: taxonomies/register.php:9
+msgid "Add New Pool Game Type"
+msgstr ""
+
+#: taxonomies/register.php:10
+msgid "New Pool Game Type Name"
+msgstr ""

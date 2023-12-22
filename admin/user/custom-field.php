@@ -150,7 +150,7 @@ add_action('edit_user_profile', 'custom_user_profile_fields');
 function custom_get_user_contact_methods($methods, $user)
 {
 	// Add phone contact method
-	$methods['phone'] = __('Phone Number');
+	$methods['phone'] = __('Phone Number', PUNCHCARDDOMAIN);
 
 	return $methods;
 }

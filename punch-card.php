@@ -6,6 +6,8 @@ Plugin URI:  https://moumini.tarik.online
 Author:      Tarik Moumini
 Version:     1.0
 License:     GPLv2 or later
+Text Domain: punch-card
+Domain Path: /languages/
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -28,7 +30,7 @@ if (!defined('ABSPATH')) {
 
 }
 
-define('PUNCHCARDDOMAIN', 'punch-card-post-types');
+define('PUNCHCARDDOMAIN', 'punch-card');
 define('PUNCHCARDPATH', plugin_dir_path(__FILE__));
 
 
@@ -71,3 +73,11 @@ add_action('init', 'pcard_register_pgame_type_taxonomy');
 
 
 require_once PUNCHCARDPATH . 'admin/user/registration/registration-form.php';
+
+
+add_action('plugins_loaded', 'punch_card_load_text_domain');
+function punch_card_load_text_domain()
+{
+	load_plugin_textdomain(PUNCHCARDDOMAIN, false, dirname(plugin_basename(__FILE__)) . '/languages/');
+}
+

@@ -30,7 +30,7 @@ function validate_and_save_phone($errors, $update, $user) {
         // Your custom phone number validation logic
         if (!is_numeric($phone) || strlen($phone) !== 10) {
             // Phone number doesn't match the required criteria
-            $errors->add('invalid_phone', __('Invalid phone number. Please enter a 10-digit numeric value.', 'your_text_domain'));
+            $errors->add('invalid_phone', __('Invalid phone number. Please enter a 10-digit numeric value.', PUNCHCARDDOMAIN));
         } else {
             // Valid phone number, save it
             update_user_meta($user->ID, 'phone', $phone);

@@ -40,6 +40,11 @@ function show_rewarded_punch_cards($user)
 {
 	$rewarded_punch_cards = get_user_meta($user->ID, 'rewarded_punch_cards', true);
 	?>
+
+	<div style="display: flex;justify-content: center; margin-top: 30px;"><img
+			src="<?php echo plugins_url('/punch-card/public/img/punch-card.jpeg'); ?>" alt=""
+			style="width: 386px; height: auto;"></div>
+
 	<h3>
 		<?php _e('Rewarded Punch Cards', PUNCHCARDDOMAIN); ?>
 	</h3>
@@ -89,7 +94,8 @@ function show_rewarded_punch_cards($user)
 			<?php _e('No Punch Cards Assigned', PUNCHCARDDOMAIN); ?>
 		</p>
 	<?php endif; ?>
-<?php
+
+	<?php
 }
 add_action('show_user_profile', 'show_rewarded_punch_cards');
 add_action('edit_user_profile', 'show_rewarded_punch_cards');

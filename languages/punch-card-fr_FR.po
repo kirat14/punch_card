@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Punch Card Plugin\n"
+"POT-Creation-Date: 2023-12-21 21:08-0600\n"
+"PO-Revision-Date: 2023-12-21 21:26-0600\n"
+"Last-Translator: \n"
+"Language-Team: YSO Team\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: public\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+
+#: admin/user/custom-field.php:13
+msgid "Assing User Loyalty Card"
+msgstr "Attribuer une carte de fidélité utilisateur"
+
+#: admin/user/custom-field.php:20 admin/user/custom-field.php:34
+msgid "Select a Loyalty Card"
+msgstr "Sélectionnez une carte de fidélité"
+
+#: admin/user/custom-field.php:48 admin/user/custom-field.php:105
+#: admin/user/customize-user-profile.php:60 post-types/register.php:45
+msgid "Milestone To Reward"
+msgstr "Parties à jouer"
+
+#: admin/user/custom-field.php:61 admin/user/custom-field.php:118
+msgid "Games Played"
+msgstr "Parties Jouées"
+
+#: admin/user/custom-field.php:85 post-types/register.php:37
+msgid "Loyalty Card"
+msgstr "Carte de fidélité"
+
+#: admin/user/custom-field.php:92
+msgid "Current Loyalty Card"
+msgstr "Carte de fidélité actuelle"
+
+#: admin/user/custom-field.php:153
+#: admin/user/registration/registration-form.php:35
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+#: admin/user/customize-user-profile.php:49
+msgid "Rewarded Punch Cards"
+msgstr "Carte de fidélité récompensées"
+
+#: admin/user/customize-user-profile.php:57 taxonomies/register.php:6
+msgid "Pool Game Type"
+msgstr "Type de jeu de billard"
+
+#: admin/user/customize-user-profile.php:63 post-types/register.php:52
+msgid "Reward"
+msgstr "Récompense"
+
+#: admin/user/customize-user-profile.php:94
+msgid "No Punch Cards Assigned"
+msgstr "Aucune carte de fidélité attribuer"
+
+#: admin/user/profile-error-validation.php:33
+msgid "Invalid phone number. Please enter a 10-digit numeric value."
+msgstr "Numéro de téléphone invalide. Veuillez saisir une valeur numérique à 10 chiffres."
+
+#: admin/user/registration/registration-form.php:21
+msgid "First Name"
+msgstr "Prénom"
+
+#: admin/user/registration/registration-form.php:28
+msgid "Last Name"
+msgstr "Nom"
+
+#: admin/user/registration/registration-form.php:49
+#: admin/user/registration/registration-form.php:65
+#: admin/user/registration/registration-form.php:70
+msgid "ERROR"
+msgstr "Erreur"
+
+#: admin/user/registration/registration-form.php:49
+msgid "You must include a phone number."
+msgstr "Vous devez inclure un numéro de téléphone."
+
+#: admin/user/registration/registration-form.php:51
+msgid "<strong>Error:</strong> The phone number is not correct."
+msgstr "<strong>Erreur :</strong> Le numéro de téléphone n'est pas correct."
+
+#: admin/user/registration/registration-form.php:58
+msgid "<strong>Error:</strong> This phone is already registered."
+msgstr "<strong>Erreur :</strong> ce téléphone est déjà enregistré."
+
+#: admin/user/registration/registration-form.php:65
+msgid "You must include a first name."
+msgstr "Vous devez inclure un prénom."
+
+#: admin/user/registration/registration-form.php:70
+msgid "You must include a last name."
+msgstr "Vous devez inclure un nom."
+
+#: post-types/arrange.php:14
+msgid "Number of Games"
+msgstr "Nombre de parties"
+
+#: post-types/register.php:12
+msgid "Punch Cards"
+msgstr "Carte de fidélité"
+
+#: post-types/register.php:13
+msgid "Punch Card"
+msgstr "Carte de fidélité"
+
+#: post-types/register.php:14 post-types/register.php:15
+msgid "Add New Punch Card"
+msgstr "Ajouter un nouvelle carte de fidélité"
+
+#: post-types/register.php:47
+msgid "The number of games a client should reach to get rewards"
+msgstr "Le nombre de parties qu'un client doit atteindre pour obtenir des récompenses"
+
+#: post-types/register.php:48
+msgid "Games Threshold"
+msgstr "Seuil des jeux"
+
+#: post-types/register.php:54
+msgid "The reward provided upon reaching the threshold."
+msgstr "La récompense fournie une fois le seuil atteint."
+
+#: post-types/register.php:55
+#, no-php-format
+msgid "50% off all drinks"
+msgstr "50% de réduction sur toutes les boissons"
+
+#: taxonomies/register.php:5
+msgid "Pool Game Types"
+msgstr "Types de jeux de billard"
+
+#: taxonomies/register.php:7
+msgid "Edit Pool Game Type"
+msgstr "Modifier le type de jeu de billard"
+
+#: taxonomies/register.php:8
+msgid "Update Pool Game Type"
+msgstr "Mettre à jour le type de jeu de billard"
+
+#: taxonomies/register.php:9
+msgid "Add New Pool Game Type"
+msgstr "Ajouter un nouveau type de jeu de billard"
+
+#: taxonomies/register.php:10
+msgid "New Pool Game Type Name"
+msgstr "Nom du nouveau type de jeu de billard"
