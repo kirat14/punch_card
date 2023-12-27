@@ -35,6 +35,10 @@ msgstr "Parties à jouer"
 msgid "Games Played"
 msgstr "Parties Jouées"
 
+#: admin/user/custom-field.php:79 admin/user/custom-field.php:118
+msgid "Assigned On"
+msgstr "Attribué le"
+
 #: admin/user/custom-field.php:85 post-types/register.php:37
 msgid "Loyalty Card"
 msgstr "Carte de fidélité"

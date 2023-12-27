@@ -40,10 +40,10 @@ require_once PUNCHCARDPATH . 'admin/user/customize-user-profile.php';
 if (is_admin()) {
 
 	// include plugin dependencies
-	require_once PUNCHCARDPATH . 'admin/admin-menu.php';
+	/* require_once PUNCHCARDPATH . 'admin/admin-menu.php';
 	require_once PUNCHCARDPATH . 'admin/settings-page.php';
 	require_once PUNCHCARDPATH . 'admin/settings-register.php';
-	require_once PUNCHCARDPATH . 'admin/settings-callbacks.php';
+	require_once PUNCHCARDPATH . 'admin/settings-callbacks.php'; */
 	require_once PUNCHCARDPATH . 'admin/user/custom-field.php';
 	require_once PUNCHCARDPATH . 'admin/user/profile-error-validation.php';
 	require_once PUNCHCARDPATH . 'admin/user/update-profile.php';

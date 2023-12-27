@@ -20,6 +20,12 @@ function is_phone_number($phone_number)
 }
 
 
+function isDatetimeFormat($input) {
+    return strtotime($input) !== false;
+}
+
+
+
 /**
  * Determines whether the given phone number exists.
  *

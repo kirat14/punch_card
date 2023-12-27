@@ -11,6 +11,12 @@ function save_custom_user_profile_fields($user_id)
 {
 	$selected_punch_card = sanitize_text_field($_POST['selected_punch_card']);
 	$game_played = intval($_POST['game_played']);
+
+	if (!isDatetimeFormat($_POST['card_assignment_date']))
+		$card_assignment_date = date("d-m-Y H:i");
+	else
+		$card_assignment_date = $_POST['card_assignment_date'];
+
 	// Validate game_played against milestone_to_reward
 	$milestone_to_reward = intval(get_post_meta($selected_punch_card, 'milestone_to_reward', true));
 
@@ -35,6 +41,7 @@ function save_custom_user_profile_fields($user_id)
 		} else if ($game_played < $milestone_to_reward) {
 			update_user_meta($user_id, 'selected_punch_card', $selected_punch_card);
 			update_user_meta($user_id, 'game_played', $game_played);
+			update_user_meta($user_id, 'card_assignment_date', $card_assignment_date);
 		}
 	}
 }
